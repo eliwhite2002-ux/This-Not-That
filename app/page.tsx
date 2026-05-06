@@ -14,7 +14,8 @@ export default function Home() {
     <>
       <section className="section-shell relative overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-grid-fade bg-[size:36px_36px] opacity-25" />
-        <div className="space-y-6">
+        <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+          <div className="space-y-6">
           <p className="text-xs uppercase tracking-[0.3em] text-gold">Field Journal + Podcast</p>
           <h1 className="max-w-4xl text-4xl font-semibold leading-tight text-white md:text-6xl">
             The field journal for embodied companion technology.
@@ -30,6 +31,16 @@ export default function Home() {
             <Link href="/subscribe" className="rounded-full border border-white/20 px-6 py-3 text-white hover:border-gold">
               Subscribe
             </Link>
+          </div>
+          </div>
+          <div className="section-shell border-gold/25 bg-gradient-to-b from-violet/50 to-charcoal/80">
+            <p className="text-xs uppercase tracking-[0.24em] text-gold">Companion Stack Radar</p>
+            <div className="mt-4 space-y-3 text-sm text-mist/85">
+              <p>Voice layer: low-latency, identity-stable output.</p>
+              <p>Memory layer: recall + narrative continuity.</p>
+              <p>Presence layer: routines, physicality, placement.</p>
+              <p>Hardware layer: doll body, handling, storage, docking.</p>
+            </div>
           </div>
         </div>
       </section>
