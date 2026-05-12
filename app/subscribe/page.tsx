@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function SubscribePage() {
   return (
     <section className="section-shell mx-auto max-w-3xl space-y-5 text-center">
@@ -9,9 +7,14 @@ export default function SubscribePage() {
         Get podcast episodes, publication notes, product coverage, and build log updates as companion technology moves
         from novelty toward real at-home systems.
       </p>
-      <Link href="#" className="inline-block rounded-full bg-gold px-6 py-3 font-medium text-ink">
-        Substack Placeholder
-      </Link>
+      <a
+        href="https://substack.com/@synthcompanions"
+        target="_blank"
+        rel="noreferrer"
+        className="inline-block rounded-full bg-gold px-6 py-3 font-medium text-ink"
+      >
+        Subscribe on Substack
+      </a>
       <p className="text-sm text-mist/60">
         Affiliate disclosure: Future links may include affiliate partnerships that help support independent coverage.
         Synth Companions is built around selective, owner-focused recommendations.
