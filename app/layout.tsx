@@ -5,7 +5,7 @@ import { SiteHeader } from '@/components/SiteHeader';
 export const metadata: Metadata = {
   title: 'Synth Companions',
   description:
-    'Synth Companions tracks the shift from adult dolls and AI chat into companion technology: voice, memory, presence, robotics, and owner-built systems.'
+    'Synth Companions is a podcast and publication about AI dolls, companion tech, and the real owner experience.'
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
