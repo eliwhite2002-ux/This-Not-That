@@ -6,6 +6,10 @@ export default function AboutPage() {
         Synth Companions is a podcast and publication about AI dolls, companion tech, and the real owner experience.
       </p>
       <p className="max-w-3xl text-mist/75">
+        Written and hosted by Eli White, Synth Companions tracks companion technology from the owner side of the
+        market: practical, skeptical, curious, and focused on what actually works at home.
+      </p>
+      <p className="max-w-3xl text-mist/75">
         This is not detached coverage of a strange niche, and it is not hype for every shiny robot demo. The point is
         to take the appeal seriously, track the technology honestly, and ask the question that matters once the product
         gets home: does this actually make ownership better?
