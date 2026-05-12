@@ -44,13 +44,21 @@ export default function Home() {
               Synth Companions tracks the future of embodied companionship from the owner’s side of the market:
               voice, memory, physical realism, product claims, and what actually matters once the product gets home.
             </p>
+            <p className="max-w-2xl text-sm text-mist/65">
+              First episode recorded. Publication notes, product coverage, and build log updates are in progress.
+            </p>
             <div className="flex flex-wrap gap-3">
               <Link href="/articles-podcast" className="rounded-full bg-gold px-6 py-3 font-medium text-ink hover:opacity-90">
-                Read or listen
+                View planned episodes
               </Link>
-              <Link href="/subscribe" className="rounded-full border border-white/20 px-6 py-3 text-white hover:border-gold">
-                Subscribe
-              </Link>
+              <a
+                href="https://substack.com/@synthcompanions"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-white/20 px-6 py-3 text-white hover:border-gold"
+              >
+                Subscribe on Substack
+              </a>
             </div>
           </div>
           <div className="section-shell border-gold/25 bg-gradient-to-b from-violet/50 to-charcoal/80">
@@ -89,7 +97,7 @@ export default function Home() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold text-white md:text-3xl">Articles / Podcast</h2>
+        <h2 className="text-2xl font-semibold text-white md:text-3xl">Upcoming Episodes / Notes</h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (
             <article key={feature.title} className="section-shell space-y-3">
@@ -118,9 +126,14 @@ export default function Home() {
       <section className="section-shell space-y-4 text-center">
         <h2 className="text-2xl font-semibold text-white md:text-3xl">Follow the category from the owner’s side.</h2>
         <p className="text-mist/80">Podcast episodes, product notes, build logs, and practical coverage of where companion tech is going.</p>
-        <Link href="/subscribe" className="inline-block rounded-full bg-gold px-6 py-3 font-medium text-ink">
-          Subscribe
-        </Link>
+        <a
+          href="https://substack.com/@synthcompanions"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-block rounded-full bg-gold px-6 py-3 font-medium text-ink"
+        >
+          Subscribe on Substack
+        </a>
       </section>
     </>
   );
