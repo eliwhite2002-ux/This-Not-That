@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { BrandLockup } from './BrandMark';
+import { LogoLockup } from './LogoMark';
 
 const socialLinks = [
   { href: 'https://substack.com/@synthcompanions', label: 'Substack' },
@@ -11,7 +11,6 @@ const socialLinks = [
 const siteLinks = [
   { href: '/topics', label: 'Topics' },
   { href: '/articles-podcast', label: 'Podcast' },
-  { href: '/build-log', label: 'Build Log' },
   { href: '/about', label: 'About' },
   { href: '/subscribe', label: 'Subscribe' },
   { href: '/disclosure', label: 'Disclosure' }
@@ -23,10 +22,10 @@ export function SiteFooter() {
       <div className="mx-auto grid w-full max-w-6xl gap-6 md:grid-cols-[1.2fr_0.8fr_1fr]">
         <div className="space-y-3">
           <Link href="/" className="inline-flex transition hover:opacity-90">
-            <BrandLockup />
+            <LogoLockup />
           </Link>
           <p className="max-w-xl text-sm leading-relaxed text-mist/65">
-            A podcast and publication about AI dolls, companion tech, and the real owner experience.
+            A podcast and publication about companion tech and the real owner experience.
           </p>
           <p className="text-xs text-mist/45">© 2026 Synth Companions.</p>
         </div>
