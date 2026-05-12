@@ -45,8 +45,8 @@ export default function ArticlesPodcastPage() {
   return (
     <section className="space-y-6">
       <div className="space-y-3">
-        <p className="text-xs uppercase tracking-[0.3em] text-gold">Articles / Podcast</p>
-        <h1 className="text-4xl font-semibold text-white">Podcast episodes and publication notes</h1>
+        <p className="text-xs uppercase tracking-[0.3em] text-gold">Podcast</p>
+        <h1 className="text-4xl font-semibold text-white">Upcoming episodes and publication notes</h1>
         <p className="max-w-3xl text-mist/80">
           Clear, owner-focused coverage of AI dolls, companion tech, product claims, and the practical realities that
           decide whether these systems actually work at home.
@@ -55,7 +55,7 @@ export default function ArticlesPodcastPage() {
       <div className="grid gap-4 md:grid-cols-2">
         {topics.map((topic, idx) => (
           <article key={topic.title} className="section-shell space-y-3">
-            <p className="text-sm uppercase tracking-[0.18em] text-gold">Episode / Article {idx + 1}</p>
+            <p className="text-sm uppercase tracking-[0.18em] text-gold">Planned Episode / Note {idx + 1}</p>
             <h2 className="text-xl font-medium text-white">{topic.title}</h2>
             <p className="text-sm text-mist/75">{topic.summary}</p>
           </article>
