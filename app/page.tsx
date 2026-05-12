@@ -16,22 +16,18 @@ const features = [
     title: 'Voice, Memory, and Presence',
     summary: 'Why companion AI changes when it feels present in the room.',
     href: '/topics/ai-tech'
-  },
-  {
-    title: 'Product Claims vs. Owner Reality',
-    summary: 'What companies market versus what owners actually experience.',
-    href: '/topics/product-coverage'
   }
 ];
 
-const audiences = ['Current owners', 'Curious buyers', 'AI companion users', 'Builders, vendors, and reviewers'];
+const audiences = ['Current owners', 'Curious buyers', 'AI companion users', 'Builders and reviewers'];
+const primaryTopics = topics.filter((topic) => topic.slug !== 'build-log').slice(0, 4);
 
 export default function Home() {
   return (
     <>
       <section className="section-shell relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-grid-fade bg-[size:36px_36px] opacity-25" />
-        <div className="grid gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-start">
+        <div className="absolute inset-0 -z-10 bg-grid-fade bg-[size:36px_36px] opacity-20" />
+        <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
           <div className="space-y-4">
             <p className="kicker">Podcast + Publication</p>
             <h1 className="hero-title max-w-4xl">
@@ -42,27 +38,26 @@ export default function Home() {
               on what actually matters once these products get home.
             </p>
             <p className="max-w-2xl text-sm leading-relaxed text-mist/60">
-              First episode recorded. Publication notes, product coverage, buyer resources, and build log updates are in
-              progress.
+              Episode 1 is recorded. Product notes, buyer resources, and publication posts are in progress.
             </p>
             <div className="flex flex-wrap gap-3 pt-1">
-              <Link href="/topics" className="rounded-full bg-gold px-5 py-2.5 text-sm font-medium text-ink hover:opacity-90 md:px-6 md:py-3 md:text-base">
-                Browse topics
-              </Link>
               <a
                 href="https://substack.com/@synthcompanions"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-white/20 px-5 py-2.5 text-sm text-white hover:border-gold md:px-6 md:py-3 md:text-base"
+                className="rounded-full bg-gold px-5 py-2.5 text-sm font-medium text-ink hover:opacity-90 md:px-6 md:py-3 md:text-base"
               >
                 Subscribe on Substack
               </a>
+              <Link href="/topics" className="rounded-full border border-white/20 px-5 py-2.5 text-sm text-white hover:border-gold md:px-6 md:py-3 md:text-base">
+                Browse topics
+              </Link>
             </div>
           </div>
-          <div className="section-shell border-gold/25 bg-gradient-to-b from-violet/50 to-charcoal/80 p-4 md:p-6">
-            <p className="kicker">Explore</p>
+          <div className="section-shell border-gold/20 bg-gradient-to-b from-violet/40 to-charcoal/70 p-4 md:p-6">
+            <p className="kicker">Coverage</p>
             <div className="mt-3 grid gap-2 text-sm">
-              {topics.slice(0, 4).map((topic) => (
+              {primaryTopics.map((topic) => (
                 <Link
                   key={topic.slug}
                   href={`/topics/${topic.slug}`}
@@ -102,7 +97,7 @@ export default function Home() {
 
       <section className="space-y-3">
         <h2 className="section-title">Upcoming Episodes / Notes</h2>
-        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-3 md:grid-cols-3">
           {features.map((feature) => (
             <Link key={feature.title} href={feature.href} className="editorial-card block space-y-2">
               <p className="text-base font-semibold leading-tight text-white md:text-lg">{feature.title}</p>
@@ -111,35 +106,6 @@ export default function Home() {
             </Link>
           ))}
         </div>
-      </section>
-
-      <section className="section-shell space-y-3">
-        <h2 className="section-title">Build Log: Companion Dock</h2>
-        <p className="text-sm leading-relaxed text-mist/80 md:text-base">
-          A practical owner-side project exploring safer storage, easier posing, handling, photography support, and
-          future charging or accessory integration for lifelike dolls and companion systems.
-        </p>
-        <div className="flex flex-wrap gap-3">
-          <Link href="/topics/build-log" className="compact-chip">
-            Build Log Topic
-          </Link>
-          <Link href="/build-log" className="compact-chip">
-            Project Notes
-          </Link>
-        </div>
-      </section>
-
-      <section className="section-shell space-y-3 text-center">
-        <h2 className="section-title">Follow the category from the owner’s side.</h2>
-        <p className="text-sm leading-relaxed text-mist/75 md:text-base">Podcast episodes, product notes, build logs, and practical coverage of where companion tech is going.</p>
-        <a
-          href="https://substack.com/@synthcompanions"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-block rounded-full bg-gold px-6 py-3 text-sm font-medium text-ink md:text-base"
-        >
-          Subscribe on Substack
-        </a>
       </section>
     </>
   );
