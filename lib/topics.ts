@@ -54,20 +54,6 @@ export const topics = [
       'Robotics Will Not Save a Bad Owner Experience'
     ],
     future: ['Product claim scorecard', 'Review standards', 'Partner/vendor notes']
-  },
-  {
-    slug: 'build-log',
-    title: 'Build Log',
-    label: 'Experiments and product ideas',
-    description:
-      'Owner-side experiments and product concepts, including storage, posing, photography workflows, and the Companion Dock idea.',
-    focus: ['Companion Dock', 'Photography workflows', 'Storage systems', 'Accessory integration'],
-    planned: [
-      'The Owner-Built Companion Stack',
-      'Companion Dock Concept Notes',
-      'Photography and Green-Screen Workflows'
-    ],
-    future: ['Companion Dock concept page', 'Parts list', 'Prototype notes']
   }
 ];
 
