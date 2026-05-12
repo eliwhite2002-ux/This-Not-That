@@ -17,14 +17,14 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-ink/85 backdrop-blur">
-      <nav className="mx-auto w-full max-w-6xl px-4 py-4 md:px-8">
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-ink/90 backdrop-blur">
+      <nav className="mx-auto w-full max-w-6xl px-4 py-3 md:px-8 md:py-4">
         <div className="flex items-center justify-between gap-4">
-          <Link href="/" className="transition hover:opacity-90">
+          <Link href="/" className="min-w-0 transition hover:opacity-90">
             <BrandLockup compact />
           </Link>
           <button
-            className="rounded-full border border-white/20 px-3 py-1 text-xs text-mist md:hidden"
+            className="rounded-full border border-white/20 px-4 py-2 text-sm text-mist md:hidden"
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-label="Toggle navigation"
@@ -40,7 +40,7 @@ export function SiteHeader() {
           </div>
         </div>
         {open && (
-          <div className="mt-4 grid gap-2 rounded-xl border border-white/10 bg-charcoal/90 p-3 md:hidden">
+          <div className="mt-4 grid gap-1 rounded-xl border border-white/10 bg-charcoal/95 p-3 md:hidden">
             {links.map((link) => (
               <Link
                 key={link.href}
