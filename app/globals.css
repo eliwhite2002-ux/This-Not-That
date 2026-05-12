@@ -13,25 +13,25 @@ body {
 }
 
 .section-shell {
-  @apply rounded-2xl border border-white/10 bg-charcoal/70 p-6 shadow-glow md:p-10;
+  @apply rounded-2xl border border-white/10 bg-charcoal/70 p-5 shadow-glow md:p-10;
 }
 
 .editorial-card {
-  @apply rounded-2xl border border-white/10 bg-charcoal/65 p-5 shadow-glow transition hover:border-gold/60 md:p-7;
+  @apply rounded-2xl border border-white/10 bg-charcoal/65 p-4 shadow-glow transition hover:border-gold/60 md:p-7;
 }
 
 .kicker {
-  @apply text-xs uppercase tracking-[0.24em] text-gold;
+  @apply text-[11px] uppercase tracking-[0.22em] text-gold md:text-xs;
 }
 
 .page-title {
-  @apply text-4xl font-semibold leading-tight text-white md:text-5xl;
+  @apply text-3xl font-semibold leading-tight text-white md:text-5xl;
 }
 
 .card-title {
-  @apply text-2xl font-semibold leading-tight text-white md:text-3xl;
+  @apply text-xl font-semibold leading-tight text-white md:text-3xl;
 }
 
 .card-copy {
-  @apply text-base leading-relaxed text-mist/75 md:text-lg;
+  @apply text-sm leading-relaxed text-mist/75 md:text-lg;
 }
