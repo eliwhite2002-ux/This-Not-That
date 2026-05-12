@@ -2,13 +2,12 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { BrandLockup } from './BrandMark';
+import { LogoLockup } from './LogoMark';
 
 const links = [
   { href: '/', label: 'Home' },
   { href: '/topics', label: 'Topics' },
   { href: '/articles-podcast', label: 'Podcast' },
-  { href: '/build-log', label: 'Build Log' },
   { href: '/about', label: 'About' },
   { href: '/subscribe', label: 'Subscribe' }
 ];
@@ -21,7 +20,7 @@ export function SiteHeader() {
       <nav className="mx-auto w-full max-w-6xl px-4 py-3 md:px-8 md:py-4">
         <div className="flex items-center justify-between gap-4">
           <Link href="/" className="min-w-0 transition hover:opacity-90">
-            <BrandLockup compact />
+            <LogoLockup compact />
           </Link>
           <button
             className="rounded-full border border-white/20 px-4 py-2 text-sm text-mist md:hidden"
